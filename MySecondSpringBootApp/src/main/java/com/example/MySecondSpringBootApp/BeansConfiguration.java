@@ -82,27 +82,27 @@ public class BeansConfiguration {
 
 	@Bean(name = "Table01")
 	public Table getTable01() {
-		return new Table("01", "4", TableStatus.FREE);
+		return new Table("01", 4, TableStatus.FREE);
 	}
 
 	@Bean(name = "Table02")
 	public Table getTable02() {
-		return new Table("02", "4", TableStatus.FREE);
+		return new Table("02", 4, TableStatus.FREE);
 	}
 
 	@Bean(name = "Table03")
 	public Table getTable03() {
-		return new Table("03", "8", TableStatus.FREE);
+		return new Table("03", 8, TableStatus.FREE);
 	}
 
 	@Bean(name = "Table04")
 	public Table getTabl04() {
-		return new Table("04", "8", TableStatus.FREE);
+		return new Table("04", 8, TableStatus.FREE);
 	}
 
 	@Bean(name = "Table05")
 	public Table getTable05() {
-		return new Table("05", "10", TableStatus.FREE);
+		return new Table("05", 10, TableStatus.FREE);
 	}
 
 	@Bean(name = "Order01")
@@ -125,6 +125,8 @@ public class BeansConfiguration {
 		order01.addDrink(getWater());
 		order01.addDrink(getWater());
 		order01.addDrink(getWater());
+		// adding as many franchises as I want
+		order01.addFranchise(getShirt());
 
 		return order01;
 
