@@ -103,4 +103,10 @@ public class BeansConfiguration {
 		return new Table("05", "10", TableStatus.FREE);
 	}
 
+	@Bean(name = "Order01")
+	public Order getOrder01() {
+		return null;
+
+	}
+
 }
