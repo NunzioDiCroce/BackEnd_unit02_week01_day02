@@ -47,6 +47,9 @@ public class MyFirstRunner implements CommandLineRunner {
 		log.info(ctx.getBean("Shirt").toString());
 		log.info(ctx.getBean("Mug").toString());
 
+		log.info("");
+		log.info("TABLES");
+
 		ctx.close();
 
 	}

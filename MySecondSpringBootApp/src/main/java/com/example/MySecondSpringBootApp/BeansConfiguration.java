@@ -77,4 +77,29 @@ public class BeansConfiguration {
 	Franchise getMug() {
 		return new Franchise("Mug", 4.99);
 	}
+
+	@Bean(name = "Table01")
+	Table getTable01() {
+		return new Table("01", "4", TableStatus.FREE);
+	}
+
+	@Bean(name = "Table02")
+	Table getTable02() {
+		return new Table("02", "4", TableStatus.FREE);
+	}
+
+	@Bean(name = "Table03")
+	Table getTable03() {
+		return new Table("03", "8", TableStatus.FREE);
+	}
+
+	@Bean(name = "Table04")
+	Table getTabl04() {
+		return new Table("04", "8", TableStatus.FREE);
+	}
+
+	@Bean(name = "Table05")
+	Table getTable05() {
+		return new Table("05", "10", TableStatus.FREE);
+	}
 }
