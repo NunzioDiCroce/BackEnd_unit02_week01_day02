@@ -49,6 +49,11 @@ public class MyFirstRunner implements CommandLineRunner {
 
 		log.info("");
 		log.info("TABLES");
+		log.info(ctx.getBean("Table01").toString());
+		log.info(ctx.getBean("Table02").toString());
+		log.info(ctx.getBean("Table03").toString());
+		log.info(ctx.getBean("Table04").toString());
+		log.info(ctx.getBean("Table05").toString());
 
 		ctx.close();
 
