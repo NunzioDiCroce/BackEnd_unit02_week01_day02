@@ -31,6 +31,9 @@ public class Order {
 	protected List<Drink> drinks = new ArrayList<>();
 	protected Map<Drink, String> drinkNotes = new HashMap<>();
 
+	protected List<Franchise> franchises = new ArrayList<>();
+	protected Map<Franchise, String> franchiseNotes = new HashMap<>();
+
 	protected double orderPrice;
 	// orderPrice DEVE ESSERE LA SOMMA DEGLI ELEMENTI E DEI COPERTI. I COPERTI
 	// DEVONO ESSERE VALORIZZATI PER MEZZO DI UN PARAMETRO DI
@@ -52,6 +55,14 @@ public class Order {
 		drinkNotes.put(_drink, _drinkNote);
 	}
 
+	public void addFranchise(Franchise _franchise) {
+		franchises.add(_franchise);
+	}
+
+	public void addFranchiseNotes(Franchise _franchise, String _franchiseNote) {
+		franchiseNotes.put(_franchise, _franchiseNote);
+	}
+
 	public void calculateOrderPrice() {
 		double pizzasTotalPrice = 0;
 
@@ -65,7 +76,13 @@ public class Order {
 			drinksTotalPrice += drink.getPrice();
 		}
 
-		this.orderPrice = pizzasTotalPrice + drinksTotalPrice;
+		double franchisesTotalPrice = 0;
+
+		for (Franchise franchise : franchises) {
+			franchisesTotalPrice = +franchise.getPrice();
+		}
+
+		this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice;
 	}
 
 }

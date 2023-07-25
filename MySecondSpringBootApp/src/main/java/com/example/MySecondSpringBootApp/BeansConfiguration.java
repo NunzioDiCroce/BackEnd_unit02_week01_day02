@@ -114,7 +114,17 @@ public class BeansConfiguration {
 		order01.setTime(LocalDateTime.now());
 		order01.setOrderStatus(OrderStatus.INPROGRESS);
 		order01.setTable(getTable01());
-		order01.setSeats("4");
+		order01.setSeats(4);
+		// adding as many pizza as I want
+		order01.addPizza(getMargheritaPizza());
+		order01.addPizza(getMargheritaPizza());
+		order01.addPizza(getMargheritaPizza());
+		order01.addPizza(getMargheritaPizza());
+		// adding as many drinks as I want
+		order01.addDrink(getWater());
+		order01.addDrink(getWater());
+		order01.addDrink(getWater());
+		order01.addDrink(getWater());
 
 		return order01;
 
