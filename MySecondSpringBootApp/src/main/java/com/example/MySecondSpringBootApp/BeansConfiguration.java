@@ -1,5 +1,7 @@
 package com.example.MySecondSpringBootApp;
 
+import java.time.LocalDateTime;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -105,7 +107,16 @@ public class BeansConfiguration {
 
 	@Bean(name = "Order01")
 	public Order getOrder01() {
-		return null;
+
+		Order order01 = new Order();
+
+		order01.setNumber("01");
+		order01.setTime(LocalDateTime.now());
+		order01.setOrderStatus(OrderStatus.INPROGRESS);
+		order01.setTable(getTable01());
+		order01.setSeats("4");
+
+		return order01;
 
 	}
 

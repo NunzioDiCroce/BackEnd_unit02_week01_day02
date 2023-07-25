@@ -23,7 +23,7 @@ public class Order {
 	protected LocalDateTime time;
 	protected OrderStatus orderStatus;
 	protected Table table;
-	protected String seats;
+	protected double seats;
 
 	protected List<Pizza> pizzas = new ArrayList<>();
 	protected Map<Pizza, String> pizzaNotes = new HashMap<>();

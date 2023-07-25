@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 
 public class Table {
 	protected String number;
-	protected String seats;
+	protected double seats;
 	protected TableStatus tableStatus;
 
 }
