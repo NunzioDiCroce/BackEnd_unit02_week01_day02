@@ -92,7 +92,7 @@ public class Order {
 			franchisesTotalPrice = +franchise.getPrice();
 		}
 
-		return this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice;
+		return this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice + (coverCharge * seats);
 	}
 
 }
