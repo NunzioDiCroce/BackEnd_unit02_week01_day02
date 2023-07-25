@@ -24,9 +24,17 @@ public class MyFirstRunner implements CommandLineRunner {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
 				MySecondSpringBootAppApplication.class);
 
+		log.info("");
 		log.info("MENU");
 		log.info("Pizzas");
 		log.info(ctx.getBean("MargheritaPizza").toString());
+		log.info(ctx.getBean("HawaiianPizza").toString());
+		log.info(ctx.getBean("SalamiPizza").toString());
+		log.info("Toppings");
+		log.info("Drinks");
+		log.info("Franchise");
+		log.info(ctx.getBean("Shirt").toString());
+		log.info(ctx.getBean("Mug").toString());
 
 		ctx.close();
 

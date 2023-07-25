@@ -21,8 +21,8 @@ public class Franchise {
 //		this.price = _price;
 //	}
 
-	@Override
-	public String toString() {
-		return name + ", " + price;
-	}
+//	@Override
+//	public String toString() {
+//		return name + ", " + price;
+//	}
 }
