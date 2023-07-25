@@ -31,7 +31,10 @@ public class Order {
 	protected List<Drink> drinks = new ArrayList<>();
 	protected Map<Drink, String> drinkNotes = new HashMap<>();
 
-	protected double orderPrice; // con coperti come parametro
+	protected double orderPrice;
+	// orderPrice DEVE ESSERE LA SOMMA DEGLI ELEMENTI E DEI COPERTI. I COPERTI
+	// DEVONO ESSERE VALORIZZATI PER MEZZO DI UN PARAMETRO DI
+	// src/main/resources/application.properties
 
 	public void addPizza(Pizza _pizza) {
 		pizzas.add(_pizza);

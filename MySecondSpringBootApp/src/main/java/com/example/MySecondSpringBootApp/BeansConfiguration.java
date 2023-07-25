@@ -102,4 +102,5 @@ public class BeansConfiguration {
 	Table getTable05() {
 		return new Table("05", "10", TableStatus.FREE);
 	}
+
 }
