@@ -57,7 +57,7 @@ public class MyFirstRunner implements CommandLineRunner {
 
 		log.info("");
 		log.info("ORDERS");
-		// log.info(ctx.getBean("").toString());
+		log.info(ctx.getBean("Order01").toString());
 
 		ctx.close();
 

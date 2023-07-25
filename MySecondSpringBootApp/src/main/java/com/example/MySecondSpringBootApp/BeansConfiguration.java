@@ -117,16 +117,19 @@ public class BeansConfiguration {
 		order01.setSeats(4);
 		// adding as many pizza as I want
 		order01.addPizza(getMargheritaPizza());
+		order01.addPizzaNote(getMargheritaPizza(), "Ben cotta");
 		order01.addPizza(getMargheritaPizza());
 		order01.addPizza(getMargheritaPizza());
 		order01.addPizza(getMargheritaPizza());
 		// adding as many drinks as I want
 		order01.addDrink(getWater());
+		order01.addDrinkNote(getWater(), "Temperatura ambiente");
 		order01.addDrink(getWater());
 		order01.addDrink(getWater());
 		order01.addDrink(getWater());
 		// adding as many franchises as I want
 		order01.addFranchise(getShirt());
+		order01.addFranchiseNotes(getShirt(), "Taglia M");
 
 		order01.setOrderPrice(order01.calculateOrderPrice());
 
@@ -146,16 +149,19 @@ public class BeansConfiguration {
 		order02.setSeats(4);
 		// adding as many pizza as I want
 		order02.addPizza(getSalamiPiazza());
+		order02.addPizzaNote(getSalamiPiazza(), "Ben cotta");
 		order02.addPizza(getSalamiPiazza());
 		order02.addPizza(getSalamiPiazza());
 		order02.addPizza(getSalamiPiazza());
 		// adding as many drinks as I want
 		order02.addDrink(getLemonade());
+		order02.addDrinkNote(getLemonade(), "Con ghiaccio");
 		order02.addDrink(getLemonade());
 		order02.addDrink(getLemonade());
 		order02.addDrink(getLemonade());
 		// adding as many franchises as I want
 		order02.addFranchise(getShirt());
+		order02.addFranchiseNotes(getShirt(), "Taglia M");
 		order02.addFranchise(getShirt());
 
 		order02.setOrderPrice(order02.calculateOrderPrice());
