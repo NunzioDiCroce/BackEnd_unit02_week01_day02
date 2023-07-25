@@ -142,7 +142,7 @@ public class BeansConfiguration {
 
 		Order order02 = new Order();
 
-		order02.setNumber("2");
+		order02.setNumber("02");
 		order02.setTime(LocalDateTime.now());
 		order02.setOrderStatus(OrderStatus.INPROGRESS);
 		order02.setTable(getTable02());
