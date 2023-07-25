@@ -32,6 +32,9 @@ public class MyFirstRunner implements CommandLineRunner {
 		log.info(ctx.getBean("SalamiPizza").toString());
 		log.info("Toppings");
 		log.info("Drinks");
+		log.info(ctx.getBean("Lemonade").toString());
+		log.info(ctx.getBean("Water").toString());
+		log.info(ctx.getBean("Wine").toString());
 		log.info("Franchise");
 		log.info(ctx.getBean("Shirt").toString());
 		log.info(ctx.getBean("Mug").toString());
