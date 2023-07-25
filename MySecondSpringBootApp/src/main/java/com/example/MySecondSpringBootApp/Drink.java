@@ -18,12 +18,12 @@ public class Drink {
 	protected double calories;
 	protected double price;
 
-	public Drink(String _name, String _size, double _calories, double _price) {
-		this.name = _name;
-		this.size = _size;
-		this.calories = _calories;
-		this.price = _price;
-	}
+//	public Drink(String _name, String _size, double _calories, double _price) {
+//		this.name = _name;
+//		this.size = _size;
+//		this.calories = _calories;
+//		this.price = _price;
+//	}
 
 	@Override
 	public String toString() {

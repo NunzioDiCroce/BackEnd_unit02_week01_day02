@@ -43,22 +43,22 @@ public class Pizza {
 		this.pizzaSize = _pizzaSize;
 	}
 
-	public Pizza(String _name, String _firstTopping, String _secondTopping, String _thirdTopping, String _fourthTopping,
-			double _calories, double _price, PizzaSize _pizzaSize) {
-		this.name = _name;
-		this.firstTopping = _firstTopping;
-		this.secondTopping = _secondTopping;
-		this.thirdTopping = _thirdTopping;
-		this.fourthTopping = _fourthTopping;
-		this.calories = _calories;
-		this.price = _price;
-		this.pizzaSize = _pizzaSize;
-	}
+//	public Pizza(String _name, String _firstTopping, String _secondTopping, String _thirdTopping, String _fourthTopping,
+//			double _calories, double _price, PizzaSize _pizzaSize) {
+//		this.name = _name;
+//		this.firstTopping = _firstTopping;
+//		this.secondTopping = _secondTopping;
+//		this.thirdTopping = _thirdTopping;
+//		this.fourthTopping = _fourthTopping;
+//		this.calories = _calories;
+//		this.price = _price;
+//		this.pizzaSize = _pizzaSize;
+//	}
 
-	@Override
-	public String toString() {
-		return name + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping + ", " + fourthTopping + ", "
-				+ calories + ", " + price + ", " + pizzaSize;
-	}
+//	@Override
+//	public String toString() {
+//		return name + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping + ", " + fourthTopping + ", "
+//				+ calories + ", " + price + ", " + pizzaSize;
+//	}
 
 }

@@ -16,10 +16,10 @@ public class Franchise {
 	protected String name;
 	protected double price;
 
-	public Franchise(String _name, double _price) {
-		this.name = _name;
-		this.price = _price;
-	}
+//	public Franchise(String _name, double _price) {
+//		this.name = _name;
+//		this.price = _price;
+//	}
 
 	@Override
 	public String toString() {
