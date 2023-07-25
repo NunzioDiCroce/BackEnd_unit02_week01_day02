@@ -65,7 +65,7 @@ public class Order {
 		franchiseNotes.put(_franchise, _franchiseNote);
 	}
 
-	public void calculateOrderPrice() {
+	public double calculateOrderPrice() {
 		double pizzasTotalPrice = 0;
 
 		for (Pizza pizza : pizzas) {
@@ -84,7 +84,7 @@ public class Order {
 			franchisesTotalPrice = +franchise.getPrice();
 		}
 
-		this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice;
+		return this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice;
 	}
 
 }

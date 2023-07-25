@@ -128,6 +128,8 @@ public class BeansConfiguration {
 		// adding as many franchises as I want
 		order01.addFranchise(getShirt());
 
+		order01.setOrderPrice(order01.calculateOrderPrice());
+
 		return order01;
 
 	}
@@ -155,6 +157,8 @@ public class BeansConfiguration {
 		// adding as many franchises as I want
 		order02.addFranchise(getShirt());
 		order02.addFranchise(getShirt());
+
+		order02.setOrderPrice(order02.calculateOrderPrice());
 
 		return order02;
 
