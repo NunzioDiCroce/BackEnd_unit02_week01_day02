@@ -9,17 +9,17 @@ public class BeansConfiguration {
 
 	@Bean(name = "MargheritaPizza")
 	Pizza getMargheritaPizza() {
-		return new Pizza("Margherita Pizza", "tomato", "cheese", 1104, 4.99, PizzaSize.STANDARD);
+		return new Pizza("Margherita Pizza", "tomato", "cheese", 1104, 4.99);
 	}
 
 	@Bean(name = "HawaiianPizza")
 	Pizza getHawaiianPizza() {
-		return new Pizza("Hawaiian Pizza", "tomato", "cheese", "ham", "pineapple", 1024, 6.49, PizzaSize.STANDARD);
+		return new Pizza("Hawaiian Pizza", "tomato", "cheese", "ham", "pineapple", 1024, 6.49);
 	}
 
 	@Bean(name = "SalamiPizza")
 	Pizza getSalamiPiazza() {
-		return new Pizza("Salami Pizza", "tomato", "cheese", "salami", 1160, 5.99, PizzaSize.STANDARD);
+		return new Pizza("Salami Pizza", "tomato", "cheese", "salami", 1160, 5.99);
 	}
 
 	@Bean(name = "CustomPizza")
