@@ -132,4 +132,32 @@ public class BeansConfiguration {
 
 	}
 
+	@Bean(name = "Order02")
+	public Order getOrder02() {
+
+		Order order02 = new Order();
+
+		order02.setNumber("2");
+		order02.setTime(LocalDateTime.now());
+		order02.setOrderStatus(OrderStatus.INPROGRESS);
+		order02.setTable(getTable02());
+		order02.setSeats(4);
+		// adding as many pizza as I want
+		order02.addPizza(getSalamiPiazza());
+		order02.addPizza(getSalamiPiazza());
+		order02.addPizza(getSalamiPiazza());
+		order02.addPizza(getSalamiPiazza());
+		// adding as many drinks as I want
+		order02.addDrink(getLemonade());
+		order02.addDrink(getLemonade());
+		order02.addDrink(getLemonade());
+		order02.addDrink(getLemonade());
+		// adding as many franchises as I want
+		order02.addFranchise(getShirt());
+		order02.addFranchise(getShirt());
+
+		return order02;
+
+	}
+
 }
