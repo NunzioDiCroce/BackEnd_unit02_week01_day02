@@ -12,7 +12,7 @@ public class MyFirstRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		log.info("MyFirstRunner is running");
+		log.info("MyFirstRunner is running...");
 	}
 
 }
