@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +22,8 @@ import lombok.extern.slf4j.Slf4j;
 @NoArgsConstructor
 @ToString
 @Slf4j
+
+@PropertySource("classpath:application.properties")
 
 public class Order {
 	protected String number;
@@ -36,10 +41,13 @@ public class Order {
 	protected List<Franchise> franchises = new ArrayList<>();
 	protected Map<Franchise, String> franchiseNotes = new HashMap<>();
 
-	protected double orderPrice;
 	// orderPrice DEVE ESSERE LA SOMMA DEGLI ELEMENTI E DEI COPERTI. I COPERTI
 	// DEVONO ESSERE VALORIZZATI PER MEZZO DI UN PARAMETRO DI
 	// src/main/resources/application.properties
+	protected double orderPrice;
+
+	@Value("${application.coverCharge}")
+	protected double coverCharge;
 
 	public void addPizza(Pizza _pizza) {
 		pizzas.add(_pizza);
