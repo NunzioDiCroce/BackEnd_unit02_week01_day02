@@ -49,4 +49,20 @@ public class Order {
 		drinkNotes.put(_drink, _drinkNote);
 	}
 
+	public void calculateOrderPrice() {
+		double pizzasTotalPrice = 0;
+
+		for (Pizza pizza : pizzas) {
+			pizzasTotalPrice += pizza.getPrice();
+		}
+
+		double drinksTotalPrice = 0;
+
+		for (Drink drink : drinks) {
+			drinksTotalPrice += drink.getPrice();
+		}
+
+		this.orderPrice = pizzasTotalPrice + drinksTotalPrice;
+	}
+
 }
