@@ -23,8 +23,8 @@ public class Topping {
 //		this.price = _price;
 //	}
 
-	@Override
-	public String toString() {
-		return name + ", " + calories + ", " + price;
-	}
+//	@Override
+//	public String toString() {
+//		return name + ", " + calories + ", " + price;
+//	}
 }
